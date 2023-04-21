@@ -1,34 +1,34 @@
 /* Basic Style */
-body {
+.body {
     background-color: #fff;
     color: #333;
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.header__img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.aaa {
+.header {
     text-align: center;
 }
 
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -49,7 +49,8 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li,
+.title {
     list-style: none;
 }
 
@@ -72,8 +73,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -101,7 +101,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-item__title {
     display: block;
     margin: 0 0 20px;
 }

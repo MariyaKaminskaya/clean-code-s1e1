@@ -5,23 +5,24 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf"
+  <body class="body">
+    <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg">
+      <a class="header__link"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
+    </header>
+    <main class="main">
+      <section class="add-item">
+        <label for="new-task" class="title add-item__title">Add Item</label>
         <div class="task-row-wrapper">
           <input id="new-task"class="task" type="text">
           <button>Add</button>
         </div>
-      </p>
-      <h3>Todo</h3>
+      </section>
+      <section class="todo">
+        <h3 class="title todo__title">Todo</h3>
         <ul id="incompleteTasks">
           <li>
             <input type="checkbox">
@@ -42,7 +43,9 @@
             </button>
           </li>
         </ul>
-      <h3>Completed</h3>
+      </section>
+      <section class="completed">
+        <h3 class="title completed__title">Completed</h3>
         <ul id="completed-tasks">
           <li>
             <input type="checkbox" checked>
@@ -54,7 +57,8 @@
             </button>
           </li>
         </ul>
-    </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
