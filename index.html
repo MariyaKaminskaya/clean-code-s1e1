@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Todo App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Todo App</title>
   </head>
   <body class="body">
     <header class="header">
@@ -33,7 +35,7 @@
               <img class="item__img" src="./remove.svg" alt="Delete task button">
             </button>
           </li>
-          <li class="list__item list__item_edit-mode">
+          <li class="list__item item list__item_edit-mode">
             <input class="item__checkbox" type="checkbox">
             <label class="item__label">Go Shopping</label>
             <input type="text" value="Go Shopping" class="item__text">
@@ -48,7 +50,7 @@
         <h3 class="title completed__title">Completed</h3>
         <ul class="list completed__list">
           <li class="list__item item">
-            <input clasa="item__checkbox" type="checkbox" checked>
+            <input class="item__checkbox" type="checkbox" checked>
             <label class="item__label">See the Doctor</label>
             <input type="text" class="item__text">
             <button class="button item__button-edit">Edit</button>
